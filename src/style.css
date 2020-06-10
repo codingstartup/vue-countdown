@@ -1,0 +1,27 @@
+.circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;;
+}
+
+#countdown {
+  display: inline-block;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 500px;
+  font-family: monospace;
+  color: #F36F21;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #43119A;
+}

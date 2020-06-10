@@ -1,0 +1,27 @@
+<div id="app" @click="animate">
+  <div id="countdown">
+    <svg
+         :width="size"
+         :height="size">
+      <circle
+              fill="transparent"
+              :stroke-width="stroke"
+              stroke="#270B58"
+              :r="radius"
+              :cx="circleOffset"
+              :cy="circleOffset"></circle>
+      <circle
+              class="circle"
+              fill="transparent"
+              :stroke-width="stroke"
+              stroke="#F36F21"
+              :r="radius"
+              :cx="circleOffset"
+              :cy="circleOffset"
+              :stroke-dasharray="circumference"
+              :stroke-dashoffset="progress"
+              stroke-linecap="round"></circle>
+    </svg>
+    <span>{{ countdown }}</span>
+  </div>
+</div>
